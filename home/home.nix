@@ -4,6 +4,9 @@
   # Allow home-manager to update and manage itself
   programs.home-manager.enable = true;
 
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
   # Home user information
   home.username = "Fidele";
   home.homeDirectory = "/home/Fidele";
@@ -12,6 +15,7 @@
   home.packages = with pkgs; [
      texlive.combined.scheme-full
      rWrapper rstudioWrapper
+     spotify spotifyd
   ];
 
   # Program configurations
@@ -32,12 +36,12 @@
       rstudioWrapper = super.rstudioWrapper.override {
           packages = with self.rPackages; 
           	[
-				knitr rmarkdown digest Rcpp htmltools jsonlite base64enc
+          		knitr rmarkdown digest Rcpp htmltools jsonlite base64enc
           		yaml
           		devtools
           		tidyverse
-		  		ggplot2 dplyr magrittr
-		  		RColorBrewer viridis patchwork gridExtra
+          		ggplot2 dplyr magrittr
+          		RColorBrewer viridis patchwork gridExtra
           		optparse
           		reshape2
           		purrr
