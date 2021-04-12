@@ -1,0 +1,4 @@
+#!/bin/bash
+# R
+nix-env -f "<nixpkgs>" -iA rEnv
+nix-env -f "<nixpkgs>" -iA rstudioEnv

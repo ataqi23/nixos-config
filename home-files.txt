@@ -1,0 +1,3 @@
+/home/Fidele/.config/nixpkgs/home.nix
+/home/Fidele/.config/nixpkgs/config.nix
+/home/Fidele/.config/nixpkgs/commands
