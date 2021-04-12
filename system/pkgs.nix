@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 { environment.systemPackages = with pkgs; [
-	# Web browsers
-	google-chrome firefox
-	# Version control
-	git
-    # Command line utilities
+    # Web browsers
+    google-chrome firefox
+    # Version control
+    git
+	# Command line utilities
     which wget tmux parted unzip parallel findutils xorriso xclip
     # Resource monitor
     htop
