@@ -62,20 +62,11 @@
     };
 
    # Define users
-   users = {
-   	users.Fidele = {
-   	 	isNormalUser = true;
-   	 	extraGroups = [ "wheel" ];
-   	 	shell = pkgs.zsh;
-   	 };
-   	 #extraUsers.Fidele = { shell = pkgs.zsh };
+   users.users.Fidele = {
+     isNormalUser = true;
+     extraGroups = [ "wheel" ]; 
+     shell = pkgs.zsh;
    };
-   
-   #users.users.Fidele = {
-   #  isNormalUser = true;
-   #  extraGroups = [ "wheel" ]; 
-    # shell = pkgs.zsh;
-   #};
 
    #users.extraUsers.Fidele = {
    #  shell = pkgs.zsh;
