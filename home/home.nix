@@ -29,7 +29,7 @@
      };
      # Enable programs
      htop.enable = true;
- 	 tmux.enable = true;
+     tmux.enable = true;
   };
 
   # R development environment
@@ -37,23 +37,22 @@
       rstudioWrapper = super.rstudioWrapper.override {
           packages = with self.rPackages; 
           	[
-          		knitr rmarkdown digest Rcpp htmltools jsonlite base64enc
-          		yaml
-          		devtools
-          		tidyverse
-          		ggplot2 dplyr magrittr
-          		RColorBrewer viridis patchwork gridExtra
-          		optparse
-          		reshape2
-          		purrr
-          		furrr future
-          		matrixcalc
+        		knitr rmarkdown digest Rcpp htmltools jsonlite base64enc
+        		yaml
+        		devtools
+        		tidyverse
+        		ggplot2 dplyr magrittr
+        		RColorBrewer viridis patchwork gridExtra
+        		optparse
+        		reshape2
+        		purrr
+        		furrr future
+        		matrixcalc
             ];
           };
         }) 
   ];
-
-  home.stateVersion = "21.03";
-
   
+  # Home-manager version
+  home.stateVersion = "21.03";
 }

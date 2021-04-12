@@ -64,16 +64,8 @@
      extraGroups = [ "wheel" ]; 
      shell = pkgs.zsh;
    };
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-   environment.systemPackages = with pkgs; [
-     firefox google-chrome
-     git
-     ulauncher
-   ];
   
-  # Allow unfree packages
+  # Allow unfree and broken packages
    nixpkgs.config = {
       allowUnfree = true;
       allowBroken = true;	
