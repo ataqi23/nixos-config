@@ -9,10 +9,9 @@
     # C++
     gnumake gdb valgrind
     # Shell
-	zsh
-	# Documents
+    zsh
+    # Documents
     pandoc
-
 	# Entertainment
     # spotify
     # spotifyd
@@ -29,6 +28,4 @@
    #       };
    #     };
    #   };
-
-
 }
