@@ -9,9 +9,9 @@
     # C++
     gnumake gdb valgrind
     # Shell
-	zsh #antigen oh-my-zsh 
+	zsh #antigen oh-my-zsh
 	# Documents
-    pandoc     
+    pandoc
 
 	# Entertainment
     # spotify
