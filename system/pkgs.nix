@@ -9,7 +9,7 @@
     # C++
     gnumake gdb valgrind
     # Shell
-	zsh #antigen oh-my-zsh
+	zsh
 	# Documents
     pandoc
 
