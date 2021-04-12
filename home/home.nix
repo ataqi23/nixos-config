@@ -15,6 +15,7 @@
   home.packages = with pkgs; [
      texlive.combined.scheme-full
      rWrapper rstudioWrapper
+     gcc
      spotify spotifyd
   ];
 

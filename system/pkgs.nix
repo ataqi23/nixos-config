@@ -5,27 +5,12 @@
     # Resource monitor
     htop
     # Editors
-    vim micro
+    vim micro sublime
     # C++
     gnumake gdb valgrind
     # Shell
     zsh
     # Documents
     pandoc
-    # Entertainment
-    # spotify
-    # spotifyd
-    # spotify-tui
   ];
-
-   #spotifyd = {
-   #     enable = true;
-   #     settings = {
-   #       global = {
-   #         username = "alif.taqi@hotmail.com";
-   #         password_cmd = "pass show spotify.com | head -n 1";
-   #         device_name = "Neptune";
-   #       };
-   #     };
-   #   };
 }
