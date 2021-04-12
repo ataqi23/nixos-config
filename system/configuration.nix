@@ -55,8 +55,8 @@
       enable = true;
       enableCompletion = true;
       autosuggestions.enable = true;
-	  ohMyZsh.enable = true;
-    };
+      #ohMyZsh.enable = true;
+   };
 
    # Define users
    users.users.Fidele = {
@@ -69,7 +69,7 @@
   # $ nix search wget
    environment.systemPackages = with pkgs; [
      firefox google-chrome
-     git xclip
+     git
      ulauncher
    ];
   

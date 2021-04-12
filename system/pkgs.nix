@@ -1,22 +1,16 @@
 { config, pkgs, ... }:
 { environment.systemPackages = with pkgs; [
-
     # Command line interfaces
-    which wget tmux parted unzip parallel findutils xorriso
-
+    which wget tmux parted unzip parallel findutils xorriso xclip
     # Resource monitor
     htop
-
     # Editors
     vim micro
-    
     # C++
-    gnumake gdb valgrind 
-    
+    gnumake gdb valgrind
     # Shell
-	zsh antigen oh-my-zsh 
-
-	# For Rmd
+	zsh #antigen oh-my-zsh 
+	# Documents
     pandoc     
 
 	# Entertainment
