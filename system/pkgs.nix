@@ -1,21 +1,25 @@
 { config, pkgs, ... }:
 { environment.systemPackages = with pkgs; [
-    #Basic Command line interfaces
-	zsh antigen oh-my-zsh # Shell
-    which
-    wget
-    tmux
-    #matrix # Not working
-    parted
-    unzip
+
+    # Command line interfaces
+    which wget tmux parted unzip parallel findutils xorriso
+
+    # Resource monitor
+    htop
+
+    # Editors
     vim micro
-    gnumake gdb valgrind # C++
-	htop
-    parallel
-    findutils
-    xorriso
     
-# Entertainment
+    # C++
+    gnumake gdb valgrind 
+    
+    # Shell
+	zsh antigen oh-my-zsh 
+
+	# For Rmd
+    pandoc     
+
+	# Entertainment
     # spotify
     # spotifyd
     # spotify-tui

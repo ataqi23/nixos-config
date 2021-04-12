@@ -15,19 +15,19 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Networking settings
   networking.hostName = "fidele";
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
   networking.useDHCP = false;
   networking.interfaces.enp3s0.useDHCP = true;
   networking.interfaces.wlp7s0.useDHCP = true;
 
   # Select internationalisation properties.
-  # i18n.defaultLocale = "en_US.UTF-8";
-  # console = {
-  #   font = "Lat2-Terminus16";
-  #   keyMap = "us";
-  # };
+  i18n.defaultLocale = "en_US.UTF-8";
+  console = {
+     font = "Lat2-Terminus16";
+     keyMap = "us";
+  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -50,9 +50,6 @@
   hardware.pulseaudio.package = pkgs.pulseaudioFull;
   hardware.pulseaudio.extraModules = [ pkgs.pulseaudio-modules-bt ];
 
-  # Enable touchpad support
-  services.xserver.libinput.enable = false;
-
   # Enable zsh terminal
   programs.zsh = {
       enable = true;
@@ -68,16 +65,11 @@
      shell = pkgs.zsh;
    };
 
-   #users.extraUsers.Fidele = {
-   #  shell = pkgs.zsh;
-   #};
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
    environment.systemPackages = with pkgs; [
      firefox google-chrome
      git xclip
-	 pandoc
      ulauncher
    ];
   
@@ -99,7 +91,7 @@
    services.openssh.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
+  networking.firewall.allowedTCPPorts = [ 57621 ]; # Open 57621 for Spotify Mobile Streaming
   # networking.firewall.allowedUDPPorts = [ ... ];
   # networking.firewall.enable = false;
 
