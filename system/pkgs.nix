@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 { environment.systemPackages = with pkgs; [
-    # Command line interfaces
+    # Command line utilities
     which wget tmux parted unzip parallel findutils xorriso xclip
     # Resource monitor
     htop
@@ -12,7 +12,7 @@
     zsh
     # Documents
     pandoc
-	# Entertainment
+    # Entertainment
     # spotify
     # spotifyd
     # spotify-tui
