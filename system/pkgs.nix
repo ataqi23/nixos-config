@@ -4,12 +4,12 @@
     google-chrome firefox
     # Version control
     git
-	# Command line utilities
+    # Command line utilities
     which wget tmux parted unzip parallel findutils xorriso xclip
     # Resource monitor
     htop
     # Editors
-    vim micro sublime
+    vim micro sublime atom
     # C++ tools
     gnumake gdb valgrind
     # Shell
