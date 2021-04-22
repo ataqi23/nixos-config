@@ -5,7 +5,7 @@
     # Version control
     git
     # Command line utilities
-    which wget tmux parted unzip parallel findutils xorriso xclip
+    which wget tmux parted unzip parallel findutils xorriso xclip gnuplot
     # Resource monitor
     htop
     # Editors
